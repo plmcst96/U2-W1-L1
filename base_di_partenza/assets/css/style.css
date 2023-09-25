@@ -278,7 +278,7 @@ footer a {
   }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1100px) {
   body {
     width: 85%;
     margin: auto;
@@ -315,20 +315,26 @@ footer a {
   }
 
   iframe {
-    width: 39%;
+    width: 38%;
     position: absolute;
     left: auto;
     top: auto;
     height: 30vh;
+    float: left;
   }
 
   section {
     height: 30vh;
     width: 50%;
     position: relative;
-    right: 2em;
-    left: 37em;
+    right: 0;
+    left: auto;
     border-radius: 20px;
+    float: right;
+  }
+
+  aside {
+    clear: right;
   }
 
   aside div {
