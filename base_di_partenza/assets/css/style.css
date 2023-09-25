@@ -331,13 +331,39 @@ footer a {
     border-radius: 20px;
   }
 
-  aside {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
+  aside div {
+    display: inline-block;
+    width: 33%;
+    height: 120px;
+    margin: 0;
   }
 
   footer {
     padding: 1.7em 11em;
+  }
+}
+
+@media print {
+  header,
+  iframe,
+  section,
+  aside,
+  footer {
+    display: none;
+  }
+
+  body {
+    background-image: none;
+    font-size: 2.2em;
+  }
+  thead tr {
+    background-color: white;
+    color: #333;
+  }
+  main {
+    box-shadow: none;
+  }
+  tbody tr:last-of-type {
+    border-bottom: none;
   }
 }
